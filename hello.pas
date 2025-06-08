@@ -1,4 +1,4 @@
 PROGRAM PrintHello(INPUT, OUTPUT);
 BEGIN
-  WRITELN('Привет мир!')
+  WRITELN('Привет друг!')
 END.
