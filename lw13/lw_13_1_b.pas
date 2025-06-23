@@ -1,10 +1,12 @@
 PROGRAM BubbleSort(INPUT, OUTPUT);
 {��������� ������ ������ INPUT � OUTPUT}
 VAR
-  Sorted, Ch, Ch1, Ch2: CHAR;
+  Sorted: CHAR;
   F1, F2: TEXT;
 
 PROCEDURE CopyFile(VAR InFile, OutFile: TEXT);
+VAR
+  Ch: CHAR;
 BEGIN
   WHILE NOT EOLN(InFile)
   DO
@@ -16,6 +18,8 @@ BEGIN
 END;
 
 PROCEDURE CopyAndSwap(VAR F1, F2: TEXT; VAR Flag: CHAR);
+VAR
+  Ch1, Ch2: CHAR;
 BEGIN
   WHILE Flag ='N'
   DO
